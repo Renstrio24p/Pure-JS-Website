@@ -4,7 +4,7 @@ export default function AboutSection(About){
     About.innerHTML = (
         `
         <div class=${cx('d-flex-row')}>
-            <img src='./src/images/javascript.png' class=${cx('about-img')} alt="javascript-logo"/>
+            <img src='./src/images/javascript.webp' class=${cx('about-img')} alt="javascript-logo"/>
             <div class=${cx('about-es10')}>
                 <h2 class=${cx('about-title')}>ES10 - ECMAScript 2019 </h2>
                 <p class=${cx('about-description')}>
