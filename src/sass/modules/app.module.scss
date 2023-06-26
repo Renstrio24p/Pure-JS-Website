@@ -1,47 +1,39 @@
-.navbar,
-.logo-container,
-.nav-links,
-.main-style,
-.overlay,
+.d-grid-row-start,
+.feature-div {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.about,
 .feature-div,
-.about {
+.logo-container,
+.main-style,
+.nav-links,
+.navbar,
+.overlay {
 	display: flex;
 	align-items: center;
 }
-
 .navbar {
 	justify-content: space-between;
 	padding: 10px;
 	position: fixed;
 	width: 100%;
-	background: rgb(255, 255, 255);
-	background: radial-gradient(
-		circle,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(55, 57, 9, 1) 0%,
-		rgba(234, 255, 0, 1) 95%
-	);
+	background: #fff;
+	background: radial-gradient(circle, #fff 0, #373909 0, #eaff00 95%);
 }
-
-.logo-container {
+.logo-container,
+.nav-links {
 	gap: 20px;
 }
-
 .logo {
 	width: 50px;
 	height: 50px;
 }
-
-.nav-links {
-	gap: 20px;
-}
-
 .main-style {
 	width: 100%;
 	padding-top: 70px;
 	flex-direction: column;
 }
-
 .home {
 	width: 100%;
 	height: 500px;
@@ -49,7 +41,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 .overlay {
 	width: 100%;
 	height: 100%;
@@ -57,194 +48,201 @@
 	align-items: center;
 	background-color: rgba(128, 128, 128, 0.425);
 }
-
 .title-box {
 	width: fit-content;
 	padding: 10px;
 	border-radius: 5px;
 	background-color: rgba(0, 0, 0, 0.404);
 }
-
 .js-text-color {
-	background: #ffff00; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
-		to right,
-		#ffff00,
-		#000000
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to right,
-		#ffff00,
-		#000000
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #ff0;
+	background: -webkit-linear-gradient(to right, #ff0, #000);
+	background: linear-gradient(to right, #ff0, #000);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
 }
-
 .text-title {
 	font-weight: 600;
-	background: #ffff00; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
-		to right,
-		#ffff00,
-		#000000
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to right,
-		#ffff00,
-		#000000
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #ff0;
+	background: -webkit-linear-gradient(to right, #ff0, #000);
+	background: linear-gradient(to right, #ff0, #000);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
 }
-
 .description-color-white {
 	color: #fff;
 	padding: 20px;
 	width: 500px;
 }
-
 .feature-div {
+	display: grid;
+	align-items: flex-start;
 	width: fit-content;
-	padding: 20px 0 20px 0;
-	gap: 20px;
+	padding: 20px 0;
 }
-
 .feature-item {
 	border-radius: 5px;
 	padding: 10px;
-	background: rgb(255, 255, 255);
-	background: radial-gradient(
-		circle,
-		rgba(255, 255, 255, 1) 0%,
-		rgb(126, 129, 20) 0%,
-		rgba(234, 255, 0, 1) 95%
-	);
+	background: #fff;
+	background: radial-gradient(circle, #fff 0, #7e8114 0, #eaff00 95%);
 }
-
+.d-flex-between,
+.intro-div,
+pre {
+	border-radius: 10px;
+}
 .about {
 	padding: 20px;
 	width: 100%;
-	background: rgb(255, 255, 255);
-	background: radial-gradient(
-		circle,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(142, 148, 22, 1) 0%,
-		rgba(81, 87, 15, 1) 95%
-	);
+	background: #fff;
+	background: radial-gradient(circle, #fff 0, #8e9416 0, #51570f 95%);
 	justify-content: center;
 	flex-direction: column;
 }
-
 .about-img {
 	width: 100px;
 	height: 100px;
 	padding: 5px;
 }
-
-.about-es10 {
+.about-es10,
+.intro,
+.intro-div,
+.intro-info,
+.pad-20,
+pre {
 	padding: 20px;
 }
-
 .about-description {
 	width: 500px;
 }
-
 .about-title {
 	font-weight: 500;
-	padding: 20px 0 10px 0;
+	padding: 20px 0 10px;
 }
-
 pre {
 	white-space: pre-line;
 	overflow-x: auto;
-	padding: 20px;
 	background-color: #222121;
-	border-radius: 10px;
 	color: #fff;
 }
-
-
 .d-flex-row {
 	display: flex;
 	align-items: center;
 	gap: 20px;
 }
-
 .d-grid-row-start {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
 	align-items: flex-start;
-	gap: 20px;
 	height: fit-content;
 }
-
 .about-item {
 	width: 100%;
 	height: 100%;
 }
-
 .intro {
 	width: 100%;
 	justify-content: center;
-	padding: 20px;
-	background: rgb(255, 255, 255);
-	background: radial-gradient(
-		circle,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(142, 148, 22, 1) 0%,
-		rgba(81, 87, 15, 1) 95%
-	);
+	background: #fff;
+	background: radial-gradient(circle, #fff 0, #8e9416 0, #51570f 95%);
 }
-
 .intro-div {
 	background-color: #fcfa7052;
-	padding: 20px;
-	border-radius: 10px;
 }
-
 .intro-info {
-	padding: 20px;
-	width: 500px;
+	width: fit-content;
 }
-
 .d-flex-between {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 20px;
 	background-color: #bcc477;
-	border-radius: 10px;
 	margin: 10px;
+	gap: 20px;
 }
-
 .d-flex-align-center {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
-
-.methods {
-	padding: 10px;
-}
-
-.pad-20 {
-	padding: 20px;
-}
-
+.methods,
 .pad-10 {
 	padding: 10px;
 }
-
 .nodejs-logo {
 	width: 100px;
 	height: auto;
 }
-
 .javascript-logo {
 	width: 60px;
 	height: auto;
+}
+@media only screen and (max-width: 921px) {
+	.feature-div {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media only screen and (max-width: 837px) {
+	.d-grid-row-start {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.d-flex-between {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 829px) {
+	pre {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 669px) {
+	.d-flex-row {
+		flex-direction: column;
+	}
+}
+@media only screen and (max-width: 585px) {
+	.d-grid-row-start {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media only screen and (max-width: 622px) {
+	.title-box {
+		width: 100%;
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 555px) {
+	.description-color-white,
+	.title-box {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 533px) {
+	.about-description {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 509px) {
+	.nav-links {
+		display: none;
+	}
+}
+@media only screen and (max-width: 441px) {
+	.feature-div {
+		grid-template-columns: repeat(1, 1fr);
+		width: 100%;
+	}
+	.feature-item {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 436px) {
+	.text-title {
+		font-size: 20px;
+		transition: 0.5s;
+	}
 }
