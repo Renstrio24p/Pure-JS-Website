@@ -68,7 +68,7 @@ export default function IntroSection(Intro){
                         }
                         </pre>
 
-                        <div>
+                        <div class=${cx('pad-20')}>
                            <h3>start.js</h3>
                            <p class=${cx('intro-info')}> 
                            this is just like a JSX rendering method but in imperative way
