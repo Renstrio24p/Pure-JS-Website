@@ -189,6 +189,8 @@ pre {
 
 .intro {
 	width: 100%;
+	justify-content: center;
+	padding: 20px;
 	background: rgb(255, 255, 255);
 	background: radial-gradient(
 		circle,
@@ -201,13 +203,48 @@ pre {
 .intro-div {
 	background-color: #fcfa7052;
 	padding: 20px;
+	border-radius: 10px;
 }
 
 .intro-info {
 	padding: 20px;
+	width: 500px;
 }
 
 .d-flex-between {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px;
+	background-color: #bcc477;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.d-flex-align-center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.methods {
+	padding: 10px;
+}
+
+.pad-20 {
+	padding: 20px;
+}
+
+.pad-10 {
+	padding: 10px;
+}
+
+.nodejs-logo {
+	width: 100px;
+	height: auto;
+}
+
+.javascript-logo {
+	width: 60px;
+	height: auto;
 }
