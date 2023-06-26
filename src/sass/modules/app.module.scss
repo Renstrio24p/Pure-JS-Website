@@ -45,7 +45,9 @@
 .home {
 	width: 100%;
 	height: 500px;
-	background-image: url('../../images/javascript-bg.jpg');
+	background-image: url('../../images/javascript-bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .overlay {

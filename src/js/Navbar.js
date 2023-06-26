@@ -6,7 +6,7 @@ export default function Navbar(Nav){
     Nav.innerHTML = (
         `
             <div class=${cx('logo-container')}>
-                <img class=${cx('logo')}  src='./src/images/javascript.png' alt='brand logo' />
+                <img class=${cx('logo')}  src='./src/images/javascript.webp' alt='brand logo' />
                 <p> Javascript Fundamentals </p>
             </div>
 
