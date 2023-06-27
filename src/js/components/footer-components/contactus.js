@@ -12,7 +12,7 @@ export default function Footer_ContactUS(Contact){
                 </form>
             </div>
 
-            <ul class=${cx('d-flex-gap-10px-left')}>
+            <ul class=${cx('d-flex-gap-10-left')}>
                 <li class=${cx('pad-5')}>
                    <img class=${cx('footer-icons')} src='./src/images/icons/collab.webp' alt="collab icon" />
                 </li>
