@@ -1,6 +1,6 @@
+import Render from './render/start.render';
 import styles from './sass/modules/app.module.scss';
 import classNames from 'classnames/bind';
-import Render from './security/Render';
 
 export const cx = classNames.bind(styles);
 
@@ -11,6 +11,7 @@ export default function Start(DOM) {
     <div id='container' class=${cx('DOM')}">
        <nav id='navbar' class=${cx('navbar')}></nav>
        <main id='main' class=${cx('main-style')}></main>
+       <footer id='footer' class=${cx('footer')}></footer>
     </div>
   `;
 

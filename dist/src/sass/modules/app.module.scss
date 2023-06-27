@@ -34,6 +34,9 @@
 	padding-top: 70px;
 	flex-direction: column;
 }
+.DOM {
+	padding: 5px;
+}
 .home {
 	width: 100%;
 	height: 500px;
@@ -87,6 +90,9 @@
 	padding: 10px;
 	background: #fff;
 	background: radial-gradient(circle, #fff 0, #7e8114 0, #eaff00 95%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .d-flex-between,
 .intro-div,
@@ -107,7 +113,6 @@ pre {
 	padding: 5px;
 }
 .about-es10,
-.intro,
 .intro-div,
 .intro-info,
 .pad-20,
@@ -121,7 +126,7 @@ pre {
 	font-weight: 500;
 	padding: 20px 0 10px;
 }
-pre {
+.pre {
 	white-space: pre-line;
 	overflow-x: auto;
 	background-color: #222121;
@@ -147,12 +152,13 @@ pre {
 	justify-content: center;
 	background: #fff;
 	background: radial-gradient(circle, #fff 0, #8e9416 0, #51570f 95%);
+	padding: 0px;
 }
 .intro-div {
 	background-color: #fcfa7052;
 }
 .intro-info {
-	width: fit-content;
+	width: 100%;
 }
 .d-flex-between {
 	display: flex;
@@ -167,6 +173,35 @@ pre {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 100%;
+	padding: 10px;
+	height: 100%;
+	gap: 10px;
+}
+.pad-5 {
+	padding: 5px;
+}
+.d-flex-gap-10 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.d-flex-gap-5px {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+.d-flex-gap-5px-left {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.d-flex-gap-10px-left {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 10px;
 }
 .methods,
 .pad-10 {
@@ -180,12 +215,71 @@ pre {
 	width: 60px;
 	height: auto;
 }
-@media only screen and (max-width: 921px) {
+.web-info {
+	width: auto;
+	padding: 10px;
+}
+.footer {
+	width: 100%;
+	padding: 20px;
+	background-color: #222121;
+}
+.footer-container {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+}
+.top-footer {
+	display: flex;
+	align-items: left;
+	justify-content: flex-start;
+	width: 100%;
+	gap: 20px;
+	height: fit-content;
+}
+.divider::after {
+	content: '';
+	width: 1px;
+	background-color: #eaff00;
+	border: 1px solid yellow;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.top-footer h2 {
+	color: #eaff00;
+	font-weight: 500;
+}
+.contribute-name {
+	color: #fff;
+}
+.github-icon {
+	width: 20px;
+}
+.email-icon {
+	width: 50px;
+}
+.footer-icons {
+	width: 30px;
+}
+.links {
+	color: #bcc477;
+	padding: 5px;
+}
+.collab-box {
+	background-color: #383636;
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+@media only screen and (max-width:921px) {
 	.feature-div {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media only screen and (max-width: 837px) {
+@media only screen and (max-width:837px) {
 	.d-grid-row-start {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -194,44 +288,60 @@ pre {
 		align-items: center;
 	}
 }
-@media only screen and (max-width: 829px) {
+@media only screen and (max-width:829px) {
 	pre {
 		width: 100%;
 	}
 }
-@media only screen and (max-width: 669px) {
+@media only screen and (max-width:669px) {
 	.d-flex-row {
 		flex-direction: column;
 	}
 }
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width:748px) {
 	.d-grid-row-start {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.d-flex-between {
+		padding: 10px;
+		justify-content: center;
+	}
+	.pad-20 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 10px;
+	}
 }
-@media only screen and (max-width: 622px) {
+@media only screen and (max-width:580px) {
+	.intro-div {
+		padding: 5px;
+		transition: 0.5s;
+	}
+}
+@media only screen and (max-width:622px) {
 	.title-box {
 		width: 100%;
 		justify-content: center;
 	}
 }
-@media only screen and (max-width: 555px) {
+@media only screen and (max-width:555px) {
 	.description-color-white,
 	.title-box {
 		width: 100%;
 	}
 }
-@media only screen and (max-width: 533px) {
+@media only screen and (max-width:533px) {
 	.about-description {
 		width: 100%;
 	}
 }
-@media only screen and (max-width: 509px) {
+@media only screen and (max-width:509px) {
 	.nav-links {
 		display: none;
 	}
 }
-@media only screen and (max-width: 441px) {
+@media only screen and (max-width:441px) {
 	.feature-div {
 		grid-template-columns: repeat(1, 1fr);
 		width: 100%;
@@ -240,7 +350,7 @@ pre {
 		width: 100%;
 	}
 }
-@media only screen and (max-width: 436px) {
+@media only screen and (max-width:436px) {
 	.text-title {
 		font-size: 20px;
 		transition: 0.5s;

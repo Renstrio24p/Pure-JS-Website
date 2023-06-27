@@ -1,7 +1,8 @@
 
 import MainContent from "../js/Main";
 import Navbar from "../js/Navbar";
-import UniqueHash from "./HashCode";
+import Footer from "../js/components/Footer";
+import UniqueHash from "../security/HashCode";
 
 export default function Render() {
 
@@ -9,6 +10,7 @@ export default function Render() {
   const ContainerDOM = document.getElementById('container');
   const Nav = document.getElementById('navbar');
   const Main = document.getElementById('main');
+  const Foot = document.getElementById('footer');
 
   // Child JS Components
 
@@ -17,9 +19,11 @@ export default function Render() {
         ContainerDOM.id = UniqueHash();
         Nav.id = UniqueHash();
         Main.id = UniqueHash();
+        Foot.id = UniqueHash();
     });
 
     // Renders the JS Components
     Navbar(Nav);
     MainContent(Main);
+    Footer(Foot);
 }
