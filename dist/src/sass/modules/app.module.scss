@@ -34,7 +34,8 @@
 	padding-top: 70px;
 	flex-direction: column;
 }
-.DOM {
+.DOM,
+.pad-5 {
 	padding: 5px;
 }
 .home {
@@ -73,6 +74,10 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+}
+.contribute-name,
+pre {
+	color: #fff;
 }
 .description-color-white {
 	color: #fff;
@@ -126,11 +131,10 @@ pre {
 	font-weight: 500;
 	padding: 20px 0 10px;
 }
-.pre {
+pre {
 	white-space: pre-line;
 	overflow-x: auto;
 	background-color: #222121;
-	color: #fff;
 }
 .d-flex-row {
 	display: flex;
@@ -152,7 +156,7 @@ pre {
 	justify-content: center;
 	background: #fff;
 	background: radial-gradient(circle, #fff 0, #8e9416 0, #51570f 95%);
-	padding: 0px;
+	padding: 0;
 }
 .intro-div {
 	background-color: #fcfa7052;
@@ -178,9 +182,6 @@ pre {
 	height: 100%;
 	gap: 10px;
 }
-.pad-5 {
-	padding: 5px;
-}
 .d-flex-gap-10 {
 	display: flex;
 	flex-direction: column;
@@ -192,16 +193,17 @@ pre {
 	align-items: center;
 	gap: 5px;
 }
-.d-flex-gap-5px-left {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-}
-.d-flex-gap-10px-left {
+.d-flex-gap-10-left {
 	display: flex;
 	justify-content: left;
 	align-items: center;
 	padding: 10px;
+}
+.d-grid-gap-10-left {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	gap: 10px;
 }
 .methods,
 .pad-10 {
@@ -241,7 +243,7 @@ pre {
 	content: '';
 	width: 1px;
 	background-color: #eaff00;
-	border: 1px solid yellow;
+	border: 1px solid #ff0;
 	height: 100%;
 	display: block;
 	margin: 0 auto;
@@ -249,9 +251,6 @@ pre {
 .top-footer h2 {
 	color: #eaff00;
 	font-weight: 500;
-}
-.contribute-name {
-	color: #fff;
 }
 .github-icon {
 	width: 20px;
@@ -274,12 +273,17 @@ pre {
 	display: flex;
 	align-items: center;
 }
-@media only screen and (max-width:921px) {
+.profile-img {
+	width: 30px;
+	border-radius: 50%;
+	height: 30px;
+}
+@media only screen and (max-width: 921px) {
 	.feature-div {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media only screen and (max-width:837px) {
+@media only screen and (max-width: 837px) {
 	.d-grid-row-start {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -288,17 +292,17 @@ pre {
 		align-items: center;
 	}
 }
-@media only screen and (max-width:829px) {
+@media only screen and (max-width: 829px) {
 	pre {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:669px) {
+@media only screen and (max-width: 669px) {
 	.d-flex-row {
 		flex-direction: column;
 	}
 }
-@media only screen and (max-width:748px) {
+@media only screen and (max-width: 748px) {
 	.d-grid-row-start {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -313,35 +317,35 @@ pre {
 		padding: 10px;
 	}
 }
-@media only screen and (max-width:580px) {
+@media only screen and (max-width: 580px) {
 	.intro-div {
 		padding: 5px;
 		transition: 0.5s;
 	}
 }
-@media only screen and (max-width:622px) {
+@media only screen and (max-width: 622px) {
 	.title-box {
 		width: 100%;
 		justify-content: center;
 	}
 }
-@media only screen and (max-width:555px) {
+@media only screen and (max-width: 555px) {
 	.description-color-white,
 	.title-box {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:533px) {
+@media only screen and (max-width: 533px) {
 	.about-description {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:509px) {
+@media only screen and (max-width: 509px) {
 	.nav-links {
 		display: none;
 	}
 }
-@media only screen and (max-width:441px) {
+@media only screen and (max-width: 441px) {
 	.feature-div {
 		grid-template-columns: repeat(1, 1fr);
 		width: 100%;
@@ -350,7 +354,7 @@ pre {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:436px) {
+@media only screen and (max-width: 436px) {
 	.text-title {
 		font-size: 20px;
 		transition: 0.5s;
