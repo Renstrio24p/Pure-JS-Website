@@ -34,9 +34,11 @@
 	padding-top: 70px;
 	flex-direction: column;
 }
+
 .DOM {
 	padding: 5px;
 }
+
 .home {
 	width: 100%;
 	height: 500px;
@@ -126,7 +128,7 @@ pre {
 	font-weight: 500;
 	padding: 20px 0 10px;
 }
-.pre {
+pre {
 	white-space: pre-line;
 	overflow-x: auto;
 	background-color: #222121;
@@ -178,31 +180,30 @@ pre {
 	height: 100%;
 	gap: 10px;
 }
+
 .pad-5 {
 	padding: 5px;
 }
+
 .d-flex-gap-10 {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
+
 .d-flex-gap-5px {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
 }
+
 .d-flex-gap-5px-left {
 	display: flex;
 	justify-content: left;
 	align-items: center;
 }
-.d-flex-gap-10px-left {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding: 10px;
-}
+
 .methods,
 .pad-10 {
 	padding: 10px;
@@ -215,20 +216,24 @@ pre {
 	width: 60px;
 	height: auto;
 }
+
 .web-info {
 	width: auto;
 	padding: 10px;
 }
+
 .footer {
 	width: 100%;
 	padding: 20px;
 	background-color: #222121;
 }
+
 .footer-container {
 	width: 100%;
 	padding: 20px;
 	display: flex;
 }
+
 .top-footer {
 	display: flex;
 	align-items: left;
@@ -237,35 +242,44 @@ pre {
 	gap: 20px;
 	height: fit-content;
 }
+
 .divider::after {
 	content: '';
-	width: 1px;
+	width: 1px; 
 	background-color: #eaff00;
 	border: 1px solid yellow;
 	height: 100%;
-	display: block;
-	margin: 0 auto;
+	display: block; 
+	margin: 0 auto; 
 }
+
+
 .top-footer h2 {
 	color: #eaff00;
 	font-weight: 500;
 }
+
 .contribute-name {
 	color: #fff;
 }
+
 .github-icon {
 	width: 20px;
 }
+
 .email-icon {
 	width: 50px;
 }
+
 .footer-icons {
-	width: 30px;
+	width: 50px;
 }
+
 .links {
 	color: #bcc477;
 	padding: 5px;
 }
+
 .collab-box {
 	background-color: #383636;
 	padding: 5px;
@@ -274,12 +288,13 @@ pre {
 	display: flex;
 	align-items: center;
 }
-@media only screen and (max-width:921px) {
+
+@media only screen and (max-width: 921px) {
 	.feature-div {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media only screen and (max-width:837px) {
+@media only screen and (max-width: 837px) {
 	.d-grid-row-start {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -288,24 +303,26 @@ pre {
 		align-items: center;
 	}
 }
-@media only screen and (max-width:829px) {
+@media only screen and (max-width: 829px) {
 	pre {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:669px) {
+@media only screen and (max-width: 669px) {
 	.d-flex-row {
 		flex-direction: column;
 	}
 }
-@media only screen and (max-width:748px) {
+@media only screen and (max-width: 748px) {
 	.d-grid-row-start {
 		grid-template-columns: repeat(1, 1fr);
 	}
+
 	.d-flex-between {
 		padding: 10px;
 		justify-content: center;
 	}
+
 	.pad-20 {
 		display: flex;
 		justify-content: center;
@@ -313,35 +330,36 @@ pre {
 		padding: 10px;
 	}
 }
-@media only screen and (max-width:580px) {
+
+@media only screen and (max-width: 580px){
 	.intro-div {
 		padding: 5px;
-		transition: 0.5s;
+		transition: .5s;
 	}
 }
-@media only screen and (max-width:622px) {
+@media only screen and (max-width: 622px) {
 	.title-box {
 		width: 100%;
 		justify-content: center;
 	}
 }
-@media only screen and (max-width:555px) {
+@media only screen and (max-width: 555px) {
 	.description-color-white,
 	.title-box {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:533px) {
+@media only screen and (max-width: 533px) {
 	.about-description {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:509px) {
+@media only screen and (max-width: 509px) {
 	.nav-links {
 		display: none;
 	}
 }
-@media only screen and (max-width:441px) {
+@media only screen and (max-width: 441px) {
 	.feature-div {
 		grid-template-columns: repeat(1, 1fr);
 		width: 100%;
@@ -350,7 +368,7 @@ pre {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:436px) {
+@media only screen and (max-width: 436px) {
 	.text-title {
 		font-size: 20px;
 		transition: 0.5s;
